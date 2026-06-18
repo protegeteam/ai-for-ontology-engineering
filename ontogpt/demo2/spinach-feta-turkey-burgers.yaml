@@ -1,0 +1,265 @@
+---
+input_text: |-
+  # Spinach and Feta Turkey Burgers
+
+  These spinach and feta turkey burgers are a big hit in the summertime when everyone is tired of the same old
+  hamburgers and hot dogs. Serve with or without buns and your favorite condiments. I like to serve these with lettuce,
+  tomato, and tzatziki sauce.
+
+  Submitted by FoodieGeek | Tested by Allrecipes Test Kitchen
+
+  Prep Time: 20 mins
+  Cook Time: 15 mins
+  Total Time: 35 mins
+  Servings: 8
+  Yield: 8 turkey burgers
+
+  ## Ingredients:
+  - cooking spray
+  - 2 pounds ground turkey
+  - 1 (10 ounce) box frozen chopped spinach, thawed and squeezed dry
+  - 4 ounces feta cheese
+  - 2 large eggs, beaten
+  - 2 cloves garlic, minced
+
+  ## Directions:
+
+  ### Step 1
+  Preheat an outdoor grill for medium-high heat and lightly oil the grate.
+
+  ### Step 2
+  Mix together turkey, spinach, feta, eggs, and garlic in a large bowl until well combined; form into 8 patties.
+
+  ### Step 3
+  Cook patties on the preheated grill on both sides until no longer pink in the center, 15 to 20 minutes. An instant-read
+  thermometer inserted into the center of patties should read at least 165 degrees F (74 degrees C).
+
+
+  Source: https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers
+raw_completion_output: |-
+  url: https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers
+  label: Spinach and Feta Turkey Burgers
+  description: A summertime favorite for those looking for an alternative to traditional hamburgers and hot dogs, these burgers can be served with or without buns and pair well with lettuce, tomato, and tzatziki sauce.
+  categories: Summer recipes; Turkey burgers
+  ingredients: cooking spray; 2 pounds ground turkey; 1 (10 ounce) box frozen chopped spinach, thawed and squeezed dry; 4 ounces feta cheese; 2 large eggs, beaten; 2 cloves garlic, minced
+  steps: Preheat an outdoor grill for medium-high heat and lightly oil the grate.; Mix together turkey, spinach, feta, eggs, and garlic in a large bowl until well combined; form into 8 patties.; Cook patties on the preheated grill on both sides until no longer pink in the center, 15 to 20 minutes. An instant-read thermometer inserted into the center of patties should read at least 165 degrees F (74 degrees C).
+prompt: |+
+  Split the following piece of text into fields in the following format:
+
+  food: <the food item>
+  state: <the state of the food item (e.g. chopped, diced)>
+
+
+  Text:
+  at least 165 degrees F)
+
+  ===
+
+extracted_object:
+  url: https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers
+  label: Spinach and Feta Turkey Burgers
+  description: A summertime favorite for those looking for an alternative to 
+    traditional hamburgers and hot dogs, these burgers can be served with or 
+    without buns and pair well with lettuce, tomato, and tzatziki sauce.
+  categories:
+    - AUTO:Summer%20recipes
+    - AUTO:Turkey%20burgers
+  ingredients:
+    - food_item:
+        food: AUTO:cooking%20spray
+        state: N/A
+    - food_item:
+        food: FOODON:02020418
+        state: ground
+      amount:
+        value: '2'
+        unit: UO:0010034
+    - food_item:
+        food: FOODON:00002968
+        state: frozen, chopped
+      amount:
+        value: '10'
+        unit: UO:0010033
+    - food_item:
+        food: FOODON:03307280
+        state: not specified
+      amount:
+        value: '4'
+        unit: UO:0010033
+    - food_item:
+        food: AUTO:large%20eggs
+        state: beaten
+      amount:
+        value: '2'
+        unit: AUTO:None
+    - food_item:
+        food: FOODON:00003582
+        state: minced
+      amount:
+        value: '2'
+        unit: AUTO:cloves
+  steps:
+    - action: AUTO:preheat%3B%20oil
+      inputs:
+        - food: FOODON:03310387
+          state: none
+      outputs:
+        - food: AUTO:none
+          state: preheated and oiled
+      utensils:
+        - AUTO:outdoor%20grill
+        - AUTO:grate
+    - action: AUTO:mix%20together
+      inputs:
+        - food: FOODON:02020418
+          state: none
+        - food: FOODON:00002968
+          state: none
+        - food: AUTO:feta
+          state: none
+        - food: FOODON:03316061
+          state: none
+        - food: FOODON:00003582
+          state: '[not specified]'
+      outputs:
+        - food: AUTO:turkey%2C%20spinach%2C%20feta%2C%20eggs%2C%20garlic
+          state: mixture
+      utensils:
+        - AUTO:large%20bowl
+    - action: AUTO:form
+    - action: AUTO:cook
+      inputs:
+        - food: FOODON:00002951
+          state: '[not specified]'
+        - food: AUTO:grill
+          state: preheated
+      outputs:
+        - food: FOODON:00002951
+          state: cooked (no longer pink in the center)
+        - food: AUTO:None
+          state: None
+      utensils:
+        - AUTO:grill
+        - AUTO:instant-read%20thermometer
+named_entities:
+  - id: AUTO:Summer%20recipes
+    label: Summer recipes
+  - id: AUTO:Turkey%20burgers
+    label: Turkey burgers
+    original_spans:
+      - 19:32
+      - 58:71
+      - 431:444
+  - id: AUTO:cooking%20spray
+    label: cooking spray
+    original_spans:
+      - 465:477
+  - id: FOODON:02020418
+    label: turkey
+    original_spans:
+      - 19:24
+      - 58:63
+      - 431:436
+      - 497:502
+      - 769:774
+      - 1166:1171
+  - id: UO:0010034
+    label: pounds
+    original_spans:
+      - 483:488
+  - id: FOODON:00002968
+    label: spinach
+    original_spans:
+      - 2:8
+      - 41:47
+      - 538:544
+      - 777:783
+      - 1149:1155
+  - id: UO:0010033
+    label: ounce
+    original_spans:
+      - 512:516
+      - 575:579
+  - id: FOODON:03307280
+    label: feta cheese
+    original_spans:
+      - 582:592
+  - id: AUTO:large%20eggs
+    label: large eggs
+    original_spans:
+      - 598:607
+  - id: AUTO:None
+    label: None
+  - id: FOODON:00003582
+    label: garlic
+    original_spans:
+      - 628:633
+      - 802:807
+  - id: AUTO:cloves
+    label: cloves
+    original_spans:
+      - 621:626
+  - id: AUTO:preheat%3B%20oil
+    label: preheat; oil
+  - id: FOODON:03310387
+    label: oil
+    original_spans:
+      - 729:731
+  - id: AUTO:none
+    label: none
+  - id: AUTO:outdoor%20grill
+    label: outdoor grill
+    original_spans:
+      - 682:694
+  - id: AUTO:grate
+    label: grate
+    original_spans:
+      - 737:741
+  - id: AUTO:mix%20together
+    label: mix together
+    original_spans:
+      - 756:767
+  - id: AUTO:feta
+    label: feta
+    original_spans:
+      - 14:17
+      - 53:56
+      - 582:585
+      - 786:789
+      - 1161:1164
+  - id: FOODON:03316061
+    label: eggs
+    original_spans:
+      - 604:607
+      - 792:795
+  - id: AUTO:turkey%2C%20spinach%2C%20feta%2C%20eggs%2C%20garlic
+    label: turkey, spinach, feta, eggs, garlic
+  - id: AUTO:large%20bowl
+    label: large bowl
+    original_spans:
+      - 814:823
+  - id: AUTO:form
+    label: form
+    original_spans:
+      - 846:849
+  - id: AUTO:cook
+    label: cook
+    original_spans:
+      - 371:374
+      - 465:468
+      - 879:882
+  - id: FOODON:00002951
+    label: patties
+    original_spans:
+      - 858:864
+      - 884:890
+      - 1039:1045
+  - id: AUTO:grill
+    label: grill
+    original_spans:
+      - 690:694
+      - 909:913
+  - id: AUTO:instant-read%20thermometer
+    label: instant-read thermometer
+    original_spans:
+      - 986:1009

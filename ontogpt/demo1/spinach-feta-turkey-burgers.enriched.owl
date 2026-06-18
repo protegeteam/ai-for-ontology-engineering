@@ -1,0 +1,2505 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <obo:IAO_0000115>a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>has_part</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>has_part</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_gocam"/>
+        <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
+        <rdfs:label>has part</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002420 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/FOODON_00002420">
+        <obo:IAO_0000115>A relation attaching between a food material and another food material that has been added to it at some point in its history.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FOODON:00002420</oboInOwl:hasDbXref>
+        <oboInOwl:id>has_ingredient</oboInOwl:id>
+        <oboInOwl:shorthand>has_ingredient</oboInOwl:shorthand>
+        <rdfs:label>has ingredient</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
+        <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002233</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>consumes</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>has_input</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#ro-eco"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_gocam"/>
+        <oboInOwl:shorthand>has_input</oboInOwl:shorthand>
+        <rdfs:label>has input</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
+        <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002234</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>produces</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>has_output</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#ro-eco"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/obo_#valid_for_gocam"/>
+        <oboInOwl:shorthand>has_output</oboInOwl:shorthand>
+        <rdfs:label>has output</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002500 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002500">
+        <obo:IAO_0000115>A relationship between a material entity and a process where the material entity has some causal role that influences the process</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002500</oboInOwl:hasDbXref>
+        <oboInOwl:id>causal_agent_in_process</oboInOwl:id>
+        <oboInOwl:shorthand>causal_agent_in_process</oboInOwl:shorthand>
+        <rdfs:label>causal agent in process</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/unit -->
+
+    <ObjectProperty rdf:about="http://qudt.org/schema/qudt/unit"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/amount -->
+
+    <ObjectProperty rdf:about="http://w3id.org/ontogpt/recipe/amount"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/food_item -->
+
+    <ObjectProperty rdf:about="http://w3id.org/ontogpt/recipe/food_item"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/steps -->
+
+    <ObjectProperty rdf:about="http://w3id.org/ontogpt/recipe/steps"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/state -->
+
+    <DatatypeProperty rdf:about="http://w3id.org/ontogpt/recipe/state"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/value -->
+
+    <DatatypeProperty rdf:about="http://w3id.org/ontogpt/recipe/value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/auto/Insert -->
+
+    <Class rdf:about="http://example.org/auto/Insert">
+        <rdfs:label>Insert</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/Mix -->
+
+    <Class rdf:about="http://example.org/auto/Mix">
+        <rdfs:label>Mix</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/None -->
+
+    <Class rdf:about="http://example.org/auto/None">
+        <rdfs:label>None</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/cloves -->
+
+    <Class rdf:about="http://example.org/auto/cloves">
+        <rdfs:label>cloves</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/feta -->
+
+    <Class rdf:about="http://example.org/auto/feta">
+        <rdfs:label>feta</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/form -->
+
+    <Class rdf:about="http://example.org/auto/form">
+        <rdfs:label>form</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/grate -->
+
+    <Class rdf:about="http://example.org/auto/grate">
+        <rdfs:label>grate</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/grill -->
+
+    <Class rdf:about="http://example.org/auto/grill">
+        <rdfs:label>grill</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/large -->
+
+    <Class rdf:about="http://example.org/auto/large">
+        <rdfs:label>large</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/mixture -->
+
+    <Class rdf:about="http://example.org/auto/mixture">
+        <rdfs:label>mixture</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/preheat -->
+
+    <Class rdf:about="http://example.org/auto/preheat">
+        <rdfs:label>preheat</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/temperature -->
+
+    <Class rdf:about="http://example.org/auto/temperature">
+        <rdfs:label>temperature</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/thermometer -->
+
+    <Class rdf:about="http://example.org/auto/thermometer">
+        <rdfs:label>thermometer</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/- -->
+
+    <Class rdf:about="http://example.org/auto/-">
+        <rdfs:label>-</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/cooking%20spray -->
+
+    <Class rdf:about="http://example.org/auto/cooking%20spray">
+        <rdfs:label>cooking spray</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/auto/large%20bowl -->
+
+    <Class rdf:about="http://example.org/auto/large%20bowl">
+        <rdfs:label>large bowl</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <obo:IAO_0000115>p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <oboInOwl:id>BFO:0000015</oboInOwl:id>
+        <rdfs:label>process</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <obo:IAO_0000115>An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <oboInOwl:id>BFO:0000040</oboInOwl:id>
+        <rdfs:label>material entity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000115>A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
+        <oboInOwl:id>COB:0000022</oboInOwl:id>
+        <rdfs:label>organism</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000035 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <oboInOwl:id>COB:0000035</oboInOwl:id>
+        <rdfs:label>completely executed planned process</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+        <oboInOwl:id>COB:0000082</oboInOwl:id>
+        <rdfs:label>planned process</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002403"/>
+        <obo:IAO_0000115>Food material for humans and animals which is processed with the intention that it be consumable as a whole or added to other food products.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Foodon product type</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00001002</oboInOwl:id>
+        <rdfs:label>food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001013 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001256"/>
+        <obo:IAO_0000115>Cheese is a food derived from milk that is produced in a wide range of flavors, textures, and forms by coagulation of the milk protein casein.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F1076&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Cheese</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cheese</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00001013</oboInOwl:id>
+        <rdfs:label>cheese food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001015 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004331"/>
+        <obo:IAO_0000115>A food product which has as a defining ingredient some plant material.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00001015</oboInOwl:id>
+        <rdfs:label>plant food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001092 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004242"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00005502"/>
+        <obo:IAO_0000115>A food product which is derived from or produced by an animal that has a vertibrae.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00001092</oboInOwl:id>
+        <rdfs:label>vertebrate food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001180 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311737"/>
+        <obo:IAO_0000115>Food product that is 1) ready or nearly ready for consumption; 2) usually a composite of several foods or ingredients that often belong to distinct product types; 3) usually formulated, mixed and partially or fully cooked.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>prepared</oboInOwl:hasBroadSynonym>
+        <oboInOwl:id>FOODON:00001180</oboInOwl:id>
+        <rdfs:label>prepared food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001242 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001015"/>
+        <obo:IAO_0000115>A food product that has some spice or herb as a defining ingredient.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=H0151&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>herb or spice</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00001242</oboInOwl:id>
+        <rdfs:label>spice or herb</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001256 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001092"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00005501"/>
+        <obo:IAO_0000115>A dairy food product has mammilian milk or a milk component as an ingredient.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=H0242&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>dairy product</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>milk product</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00001256</oboInOwl:id>
+        <rdfs:label>dairy food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001261 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001015"/>
+        <obo:IAO_0000115>A plant food product which derives from one or more vegetables.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00001261</oboInOwl:id>
+        <rdfs:label>vegetable food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001604 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301906"/>
+        <obo:IAO_0000115>A sandwich which has at least one prominent meat ingredient.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00001604</oboInOwl:id>
+        <rdfs:label>animal product sandwich</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001699 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001699">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001604"/>
+        <oboInOwl:id>FOODON:00001699</oboInOwl:id>
+        <rdfs:label>cattle sandwich</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001714 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001714">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002403"/>
+        <obo:IAO_0000115>Food material which normally exists as an ingredient to another food material, rather than eaten on its own.  This includes chemical food components.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00001714</oboInOwl:id>
+        <rdfs:label>food material component</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001895 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001895">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001242"/>
+        <oboInOwl:id>FOODON:00001895</oboInOwl:id>
+        <rdfs:label>garlic food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002143 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001261"/>
+        <obo:IAO_0000115>A plant food product made with plant leaves.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00002143</oboInOwl:id>
+        <rdfs:label>plant leaf food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002222 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001180"/>
+        <obo:IAO_0000115>A sandwich food product is a food product used to create a sandwich.  This includes bread as a container, and sandwich ingredients and spreads.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00002222</oboInOwl:id>
+        <rdfs:label>sandwich food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002403 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>Any substance that can be consumed by an organism to satisfy nutritional or other health needs, or to provide a social or organoleptic food experience</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>food</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>foodstuff</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>nourishment</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>sustenance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>FOODON:00002403</oboInOwl:id>
+        <rdfs:label>food material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002451 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <obo:IAO_0000115>A process involving the physical transformation of a food source or food product into some derived organic material or food product</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00002451</oboInOwl:id>
+        <rdfs:label>food transformation process</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002454 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002403"/>
+        <obo:IAO_0000115>Food material which has been categorized by a characteristic such as granularity or temperature.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00002454</oboInOwl:id>
+        <rdfs:label>food material by characteristic</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002501 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001002"/>
+        <obo:IAO_0000115>A food product consisting of food material derived from ingredients sourced from multiple organisms.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>multi-ingredient</oboInOwl:hasBroadSynonym>
+        <oboInOwl:id>FOODON:00002501</oboInOwl:id>
+        <rdfs:label>multi-component food</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002616 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411297"/>
+        <obo:IAO_0000115>A whole avian animal.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Aves</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>avian</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>bird</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00002616</oboInOwl:id>
+        <rdfs:label>avian animal</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002645 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002403"/>
+        <obo:IAO_0000115>Food material organized by the process which it results from.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00002645</oboInOwl:id>
+        <rdfs:label>food material by process</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002664 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420228"/>
+        <obo:IAO_0000115>A lipid food product is a food product made primarily of plant or animal fat or oil</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fats and oils</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>oils and fats</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00002664</oboInOwl:id>
+        <rdfs:label>lipid food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002737 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002737">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001699"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003288"/>
+        <obo:IAO_0000115>A hamburger (short: burger) is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, or flame broiled.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>burger</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hamburger</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00002737</oboInOwl:id>
+        <rdfs:label>Burgers</rdfs:label>
+        <rdfs:label>beef hamburger (dish)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002951 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002951">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002222"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03430151"/>
+        <obo:IAO_0000115>A patty, in American, Canadian, South African, Australian and New Zealand English, is a flattened, usually round, serving of ground food, often meat or meat alternatives. The food is compacted and shaped into the patty, then cooked, and served.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>pattie</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00002951</oboInOwl:id>
+        <rdfs:label>patties</rdfs:label>
+        <rdfs:label>patty</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002968 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002968">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002143"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+        <obo:IAO_0000115>A leaf of an okazi plant (Gnetum africanum).</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>spinach</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>Gnetum africanum leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>afang leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>african jointfir leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eru leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fumbua leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>okazi leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>okok leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ukazi leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>wild spinach leaf</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00002968</oboInOwl:id>
+        <rdfs:label>okazi leaf</rdfs:label>
+        <rdfs:label>spinach</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003004 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420164"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
+        <obo:IAO_0000115>A whole animal.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=B1297&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:00003004</oboInOwl:id>
+        <rdfs:label>animal</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003288 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002501"/>
+        <oboInOwl:id>FOODON:00003288</oboInOwl:id>
+        <rdfs:label>multi-component meat product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003582 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001895"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025356"/>
+        <obo:IAO_0000115>A bulb of a garlic plant (Allium sativum)</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>garlic</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:00003582</oboInOwl:id>
+        <rdfs:label>garlic</rdfs:label>
+        <rdfs:label>garlic bulb</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004106 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001013"/>
+        <obo:IAO_0000115>A food product made from feta cheese.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00004106</oboInOwl:id>
+        <rdfs:label>feta cheese food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004242 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420164"/>
+        <obo:IAO_0000115>A food product that is derived from some animal.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00004242</oboInOwl:id>
+        <rdfs:label>animal food product</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004328 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420116"/>
+        <obo:IAO_0000115>A piece or pieces or amount of substance derived from one or more organisms.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00004328</oboInOwl:id>
+        <rdfs:label>organism piece</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004331 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420116"/>
+        <obo:IAO_0000115>Anatomical or other piece(s) or substance derived from one or more plants.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00004331</oboInOwl:id>
+        <rdfs:label>plant material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004333 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004333">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004328"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004331"/>
+        <obo:IAO_0000115>An anatomical or other piece derived from a plant.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00004333</oboInOwl:id>
+        <rdfs:label>plant piece</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00005501 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00005501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00005502"/>
+        <obo:IAO_0000115>Material which derives from one or more mammals.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00005501</oboInOwl:id>
+        <rdfs:label>mammal material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00005502 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00005502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420164"/>
+        <obo:IAO_0000115>Material which derives from one or more vertebrate animals.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:00005502</oboInOwl:id>
+        <rdfs:label>vertebrate material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_02010002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_02010002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002050"/>
+        <obo:IAO_0000115>An egg which is produced by an oviperous animal.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:02010002</oboInOwl:id>
+        <rdfs:label>animal egg</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_02020050 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_02020050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00005502"/>
+        <obo:IAO_0000115>Material that derives from some avian animal.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:02020050</oboInOwl:id>
+        <rdfs:label>avian material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_02020404 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_02020404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020686"/>
+        <obo:IAO_0000115>Material that derives from some turkey.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:02020404</oboInOwl:id>
+        <rdfs:label>turkey material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_02020418 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_02020418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020404"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411236"/>
+        <obo:IAO_0000115>A whole turkey.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:02020418</oboInOwl:id>
+        <rdfs:label>turkey</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_02020686 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_02020686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020050"/>
+        <obo:IAO_0000115>Material that derives from some poultry.</obo:IAO_0000115>
+        <oboInOwl:id>FOODON:02020686</oboInOwl:id>
+        <rdfs:label>poultry material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301906 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002222"/>
+        <obo:IAO_0000115>A food typically consisting of vegetables, sliced cheese and/or meat, placed on or between slices of bread, or more generally any dish wherein two or more pieces of bread serve as a container or wrapper for another food type.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F1906&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03301906</oboInOwl:id>
+        <rdfs:label>sandwich</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03307280 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03307280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004106"/>
+        <obo:IAO_0000115>A Greek brined curd white cheese made from sheep&apos;s milk or from a mixture of sheep and goat&apos;s milk.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F7280&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03307280</oboInOwl:id>
+        <rdfs:label>feta cheese</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03310387 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03310387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002664"/>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F10387&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03310387</oboInOwl:id>
+        <rdfs:label>oil</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03311737 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03311737">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002645"/>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F11737&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03311737</oboInOwl:id>
+        <rdfs:label>processed food</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03315102 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03315102">
+        <obo:IAO_0000115>Food material derived from a chicken egg.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F15102&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03315102</oboInOwl:id>
+        <rdfs:label>chicken egg material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03316061 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03316061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_02010002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315102"/>
+        <obo:IAO_0000115>An egg which is produced by an oviperous chicken.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>egg</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F16061&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>chicken egg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hen egg</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>FOODON:03316061</oboInOwl:id>
+        <rdfs:label>chicken egg</rdfs:label>
+        <rdfs:label>eggs</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03411236 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03411236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002616"/>
+        <obo:IAO_0000115>The turkey is a large bird in the genus Meleagris, which is native to the Americas. Males of both turkey species have a distinctive fleshy wattle or protuberance that hangs from the top of the beak (called a snood). They are among the largest birds in their ranges. As in many galliformes, the male is larger and much more colorful than the female.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>turkey</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>&lt;http://eol.org/pages/18523&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=B1236&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03411236</oboInOwl:id>
+        <rdfs:label>turkey (bird)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03411297 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03411297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003004"/>
+        <obo:IAO_0000115>A vertebrate animal is any species of organism within the subphylum Vertebrata (chordates with backbones). Vertebrates represent the overwhelming majority of the phylum Chordata, with currently about 69,276 species described.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>animal</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=B1297&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03411297</oboInOwl:id>
+        <rdfs:label>vertebrate animal</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420116 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>Material which is distinguished primarily by the organism(s) it derives from.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=B0001&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=B1564&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=C0116&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03420116</oboInOwl:id>
+        <rdfs:label>organism material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420144 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420148"/>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=C0144&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03420144</oboInOwl:id>
+        <rdfs:label>plant above surface, excluding fruit and seed</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420148 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004333"/>
+        <obo:IAO_0000115>The parts of a plant that are not fruit or seed.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=C0148&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03420148</oboInOwl:id>
+        <rdfs:label>root, stem, leaf or flower</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420164 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420116"/>
+        <obo:IAO_0000115>Material that derives from one or more animals</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=C0164&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03420164</oboInOwl:id>
+        <rdfs:label>animal material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420228 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001714"/>
+        <obo:IAO_0000115>A physical-chemical component separated from the food source or its parts by extraction, centrifugation, filtration, heat processing, expressing or a similar process. The separated component may be converted through further processing. If this is done, the final substance is indexed. A water-extracted component may remain in aqueous dispersion. The extract, concentrate or isolate is indexed in preference to the anatomic part from which it is derived. For example, peanut oil is indexed under *PEANUT* combined wih *FAT OR OIL* rather than with *SEED OR KERNEL*. On the other hand, fruit and vegetable juices can be indexed under *FRUIT JUICE OR NECTAR* or *VEGETABLE JUICE* (A. PRODUCT TYPE); therefore the anatomic part of the plant should be indexed.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>langual:C0228</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03420228</oboInOwl:id>
+        <rdfs:label>extract, concentrate or isolate of plant or animal</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03430151 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03430151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002454"/>
+        <obo:IAO_0000115>Food material which is a hard or soft material capable of retaining its own shape at room temperature.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=E0151&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>&lt;https://bioregistry.io/reference/siren:F17643&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03430151</oboInOwl:id>
+        <rdfs:label>food (solid)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03450002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03450002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460111"/>
+        <oboInOwl:hasDbXref>http://www.langual.org/langual_thesaurus.asp?termid=G0002</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03450002</oboInOwl:id>
+        <rdfs:label>food cooking</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03450004 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03450004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450002"/>
+        <obo:IAO_0000115>Cooked at moderate to high levels of heat in which no liquid is added and only small amounts of fat may be added to prevent sticking.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://www.langual.org/langual_thesaurus.asp?termid=G0004</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03450004</oboInOwl:id>
+        <rdfs:label>cooking by dry heat</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03450006 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03450006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450004"/>
+        <obo:IAO_0000115>Cooked without moisture under or over intense direct heat.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://www.langual.org/langual_thesaurus.asp?termid=G0006</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>barbecuing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>broiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>grilling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>FOODON:03450006</oboInOwl:id>
+        <rdfs:label>Grilling</rdfs:label>
+        <rdfs:label>broiling or grilling</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03460111 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03460111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002451"/>
+        <obo:IAO_0000115>Used to specifically characterize a food product based on the treatment or processes applied to the product or any indexed ingredient. The processes include adding, substituting or removing components or modifying the food or component, e.g., through fermentation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://www.langual.org/langual_thesaurus.asp?termid=H0111</oboInOwl:hasDbXref>
+        <oboInOwl:id>FOODON:03460111</oboInOwl:id>
+        <rdfs:label>food treatment process</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0006001 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0006001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>filoma (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>フィロム、葉(的）器官 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>PO:0006001</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#TraitNet%3E"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#reference%3E"/>
+        <rdfs:label>phyllome</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009006 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0009006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025007"/>
+        <obo:IAO_0000115>A collective plant organ structure (PO:0025007) that produces shoot-borne portions of meristem tissue (PO:0009013) and the plant structures (PO:0009011) that arise from them.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FNA:02756ad4-a09c-48d7-8754-903254e557a9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:135</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>sistema de epiblasto (epiblastema) (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>シュート系、苗条系 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>tree crown (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>Poaceae crown (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>shoot (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>thalli (related, plural)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>thallus (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0009006</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#TraitNet%3E"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#reference%3E"/>
+        <rdfs:label>shoot system</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009008 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0009008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
+        <obo:IAO_0000115>A multi-tissue plant structure (PO:0025496) that is a functional unit, is a proper part of a whole plant (PO:0000003), and includes portions of plant tissue (PO:0009007) of at least two different types that derive from a common developmental path.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>organ (broad)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>PATO:01503</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:55</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>&amp;#243rgano vegetal (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>植物 器官 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>compound plant organ (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>simple plant organ (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0009008</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#TraitNet%3E"/>
+        <rdfs:label>plant organ</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009011 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0009011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025131"/>
+        <obo:IAO_0000115>A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=C0174&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:57</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>estructura vegetal (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>植物 構造 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>PO:0009011</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#TraitNet%3E"/>
+        <rdfs:label>plant structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025007 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025497"/>
+        <obo:IAO_0000115>A collective plant structure (PO:0025497) that is a proper part of a whole plant (PO:0000003), and is composed of two or more adjacent plant organs (PO:0009008) and the associated portions of plant tissue (PO:0009007).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PO_GIT:63</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>estructura vegetal colectiva de &amp;#243rgano (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>集合植物器官構造 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>PO:0025007</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#TraitNet%3E"/>
+        <rdfs:label>collective plant organ structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025034 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420144"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+        <obo:IAO_0000115>A phyllome (PO:0006001) that is not associated with a reproductive structure.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>&lt;http://www.langual.org/langual_thesaurus.asp?termid=C0200&gt;</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:274</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:301</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>hoja (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>葉 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>PO:0025034</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/TEMP#TraitNet%3E"/>
+        <rdfs:label>leaf</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025131 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>An anatomical entity that is or was part of a plant.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PO_GIT:224</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>entidad anat&amp;#243mica vegetal (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>植物 解剖学（形態）的実体 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>PO:0025131</oboInOwl:id>
+        <rdfs:label>plant anatomical entity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025356 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+        <obo:IAO_0000115>A short, enlarged shoot system (PO:0009006) that has as parts a short stem (PO:0009047) in which the shoot internodes (PO:0005005) do not elongate, and one or more buds (PO:0000055) enclosed by fleshy leaves (PO:0009025) or leaf bases (PO:0020040).</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>diaspore (broad)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>PO_GIT:173</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>bulbo (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>球根、鱗茎 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>bulblet (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id>PO:0025356</oboInOwl:id>
+        <rdfs:label>bulb</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025496 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <obo:IAO_0000115>A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PO_GIT:480</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>estructura vegetal con m&amp;#250ltiples tejidos (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>複数の組織からなる植物構造 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>PO:0025496</oboInOwl:id>
+        <rdfs:label>multi-tissue plant structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025497 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/PO_0025497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <obo:IAO_0000115>A plant structure (PO:0009011) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008) or adjacent cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PO_GIT:479</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>estructura vegetal colectiva (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>集合的植物構造 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>PO:0025497</oboInOwl:id>
+        <rdfs:label>collective plant structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000061 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000115>Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
+        <oboInOwl:id>UBERON:0000061</oboInOwl:id>
+        <rdfs:label>anatomical structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>Anatomical entity that has mass.</obo:IAO_0000115>
+        <oboInOwl:id>UBERON:0000465</oboInOwl:id>
+        <rdfs:label>material anatomical entity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000468 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010000"/>
+        <obo:IAO_0000115>Anatomical structure that is an individual member of a species and consists of more than one cell.</obo:IAO_0000115>
+        <oboInOwl:id>UBERON:0000468</oboInOwl:id>
+        <rdfs:label>multicellular organism</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <oboInOwl:id>UBERON:0001062</oboInOwl:id>
+        <rdfs:label>anatomical entity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002050 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005423"/>
+        <obo:IAO_0000115>Anatomical structure that is part of an embryo.</obo:IAO_0000115>
+        <oboInOwl:id>UBERON:0002050</oboInOwl:id>
+        <rdfs:label>embryonic structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005423 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <oboInOwl:id>UBERON:0005423</oboInOwl:id>
+        <rdfs:label>developing anatomical structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
+        <obo:IAO_0000115>An anatomical structure that has more than one cell as a part.</obo:IAO_0000115>
+        <oboInOwl:id>UBERON:0010000</oboInOwl:id>
+        <rdfs:label>multicellular anatomical structure</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
+        <obo:IAO_0000115>A unit of measurement is a standardized quantity of a physical quality.</obo:IAO_0000115>
+        <oboInOwl:id>UO:0000000</oboInOwl:id>
+        <rdfs:label>unit</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115>A unit which is a standard measure of the amount of matter/energy of a physical object.</obo:IAO_0000115>
+        <oboInOwl:id>UO:0000002</oboInOwl:id>
+        <rdfs:label>mass unit</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0010033 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UO_0010033">
+        <rdfs:label>ounce</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0010034 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UO_0010034">
+        <rdfs:label>pounds</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_1010033 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UO_1010033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+        <oboInOwl:id>UO:1010033</oboInOwl:id>
+        <rdfs:label>ounce based unit</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_1010034 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UO_1010034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000002"/>
+        <oboInOwl:id>UO:1010034</oboInOwl:id>
+        <rdfs:label>pound based unit</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/Recipe -->
+
+    <Class rdf:about="http://w3id.org/ontogpt/recipe/Recipe"/>
+    
+
+
+    <!-- https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers -->
+
+    <Class rdf:about="https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/ontogpt/recipe/Recipe"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <someValuesFrom rdf:resource="http://example.org/auto/cloves"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <hasValue>2</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>whole</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <someValuesFrom rdf:resource="http://example.org/auto/large"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <hasValue>2</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>N/A</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <hasValue>10</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>frozen, chopped</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <hasValue>4</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307280"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>none</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010034"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <hasValue>2</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>ground</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/cooking%20spray"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>none</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/auto/Insert"/>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://example.org/auto/thermometer"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>instant-read</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>N/A (state not specified)</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://example.org/auto/temperature"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>reading</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                        <someValuesFrom rdf:resource="http://example.org/auto/None"/>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/auto/Mix"/>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://example.org/auto/feta"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>N/A</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>N/A</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>whole</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>whole</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>N/A</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://example.org/auto/mixture"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>combined</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                        <someValuesFrom rdf:resource="http://example.org/auto/large%20bowl"/>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/auto/form"/>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>8</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                        <someValuesFrom rdf:resource="http://example.org/auto/-"/>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/auto/preheat"/>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310387"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>N/A</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                        <someValuesFrom>
+                                            <Class>
+                                                <intersectionOf rdf:parseType="Collection">
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <someValuesFrom rdf:resource="http://example.org/auto/grill"/>
+                                                    </Restriction>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <hasValue>preheated</hasValue>
+                                                    </Restriction>
+                                                </intersectionOf>
+                                            </Class>
+                                        </someValuesFrom>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                        <someValuesFrom rdf:resource="http://example.org/auto/grate"/>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                        <someValuesFrom rdf:resource="http://example.org/auto/grill"/>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/cloves"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <hasValue>2</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>whole</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/large"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <hasValue>2</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>N/A</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <hasValue>10</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>frozen, chopped</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <hasValue>4</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307280"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>none</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010034"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <hasValue>2</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>ground</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <someValuesFrom>
+                    <Restriction>
+                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <someValuesFrom rdf:resource="http://example.org/auto/cooking%20spray"/>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                        <hasValue>none</hasValue>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/Insert"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/thermometer"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>instant-read</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>N/A (state not specified)</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/temperature"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>reading</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <someValuesFrom rdf:resource="http://example.org/auto/None"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/Mix"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/feta"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>N/A</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>N/A</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>whole</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>whole</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>N/A</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/mixture"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>combined</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <someValuesFrom rdf:resource="http://example.org/auto/large%20bowl"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/form"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>8</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <someValuesFrom rdf:resource="http://example.org/auto/-"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/preheat"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310387"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>N/A</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <someValuesFrom rdf:resource="http://example.org/auto/grill"/>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <hasValue>preheated</hasValue>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <someValuesFrom rdf:resource="http://example.org/auto/grate"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <someValuesFrom rdf:resource="http://example.org/auto/grill"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <terms:description>These spinach and feta turkey burgers are a big hit in the summertime when everyone is tired of the same old hamburgers and hot dogs. Serve with or without buns and your favorite condiments. I like to serve these with lettuce, tomato, and tzatziki sauce.</terms:description>
+        <terms:subject rdf:resource="http://example.org/auto/Main%20Course"/>
+        <terms:subject rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002737"/>
+        <terms:subject rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450006"/>
+        <rdfs:label>Spinach and Feta Turkey Burgers</rdfs:label>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://example.org/auto/Main%20Course">
+        <rdfs:label>Main Course</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
