@@ -1,0 +1,127 @@
+id: http://protege.stanford.edu/ontologies/grocery-item
+name: grocery-item
+title: Grocery Item Template
+description: >-
+  A template for grocery items and the (possibly multi-level) nesting of the food
+  ingredients they contain: a product is made of food stuffs, a food ingredient may
+  be made of further ingredients, and so on.
+license: MIT
+prefixes:
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  linkml: https://w3id.org/linkml/
+  gro: http://protege.stanford.edu/ontologies/grocery-ontology/
+  FOODON: http://purl.obolibrary.org/obo/FOODON_
+  AUTO: http://example.org/auto/
+
+default_prefix: gro
+default_range: string
+
+imports:
+  - linkml:types
+  - core
+
+classes:
+  GroceryItem:
+    tree_root: true
+    description: >-
+      A packaged product sold in a grocery store (e.g. a boxed cookie, a
+      breakfast cereal, a jar of sauce).
+    attributes:
+      id:
+        identifier: true
+        range: uriorcurie
+        slot_uri: rdf:Resource
+        description: >-
+          A CURIE that identifies this product: "gro:" followed by the
+          product name in UpperCamelCase with no spaces or punctuation (for
+          example a product named "Crunchy Oat Cereal" becomes
+          gro:CrunchyOatCereal). Must contain no spaces.
+        annotations:
+          prompt.skip: "true"
+      label:
+        description: the product name of the grocery item
+        slot_uri: rdfs:label
+        annotations:
+          owl: AnnotationProperty, AnnotationAssertion
+      description:
+        description: the description of the grocery item
+        slot_uri: rdfs:comment
+        annotations:
+          owl: AnnotationProperty, AnnotationAssertion
+    slots:
+      - contains_food_stuff
+      - has_ingredients
+    annotations:
+      owl: Class
+      owl.template: |-
+        {% macro ref(x) %}{% if x.startswith('AUTO:') %}<http://example.org/auto/{{ x[5:] }}>{% else %}{{ x }}{% endif %}{% endmacro %}
+        SubClassOf( {{ id }} gro:GroceryItem )
+        {% for fs in contains_food_stuff %}
+        SubClassOf( {{ id }} ObjectSomeValuesFrom( gro:containsFoodStuff {{ ref(fs) }} ) )
+        SubClassOf( {{ ref(fs) }} gro:FoodStuff )
+        {% endfor %}
+        {% for s in has_ingredients %}
+        SubClassOf( {{ ref(s.parent) }} ObjectSomeValuesFrom( gro:hasIngredient {{ ref(s.ingredient) }} ) )
+        SubClassOf( {{ ref(s.parent) }} gro:FoodStuff )
+        SubClassOf( {{ ref(s.ingredient) }} gro:FoodStuff )
+        {% endfor %}
+
+  FoodStuff:
+    is_a: NamedEntity
+    description: >-
+      A food substance, i.e. a whole food product, a compound food made of other
+      food stuffs, or a simple ingredient (e.g. a flour, a sugar, an oil). Refer
+      to the same food by one consistent name (same spelling and Title Case) so
+      it resolves to a single class.
+    id_prefixes:
+      - FOODON
+    annotations:
+      annotators: sqlite:obo:foodon
+      owl: Class
+
+  IngredientStatement:
+    description: >-
+      A statement that one food stuff (the parent) directly contains another food
+      stuff as an ingredient. Used to capture ingredient nesting: a compound
+      ingredient contains its sub-ingredients, and is itself contained by the
+      overall product.
+    attributes:
+      ingredient:
+        description: the food stuff that is contained as an ingredient
+        range: FoodStuff
+      parent:
+        description: >-
+          the food stuff that contains this ingredient — either the overall
+          product food or a compound ingredient that itself contains ingredients
+        range: FoodStuff
+
+slots:
+  contains_food_stuff:
+    description: >-
+      the specific food that this grocery item is, as a single food stuff in
+      singular form. Use the most specific food name stated for the product
+      (e.g. "Fudge Mint Cookie"), not a broad category ("cookie", "cookies") and
+      not the brand. Write the name in Title Case and use it consistently.
+    range: FoodStuff
+    multivalued: true
+    slot_uri: gro:containsFoodStuff
+    annotations:
+      owl: ObjectProperty
+  has_ingredients:
+    description: >-
+      semicolon-separated list of containment statements, one per ingredient
+      mention, each written as "PARENT contains INGREDIENT". The parent is the
+      food the ingredient belongs to: the overall product for top-level
+      ingredients, or a compound ingredient for its sub-ingredients. State the
+      product as containing each top-level ingredient, and each compound
+      ingredient as containing its sub-ingredients. For example, for a frozen
+      pizza topped with cheese and a sauce that is itself made from tomato and
+      herbs: "Pizza contains Sauce; Pizza contains Cheese; Sauce contains Tomato;
+      Sauce contains Herbs". Write each food's name identically every time it
+      appears — same spelling and Title Case capitalization — so the same food is
+      never split into duplicate classes.
+    range: IngredientStatement
+    multivalued: true
+    annotations:
+      owl: ObjectProperty

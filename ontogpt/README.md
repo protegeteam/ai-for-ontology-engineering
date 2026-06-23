@@ -6,7 +6,8 @@
 ontogpt/
 ├── demo1/   Data extraction with a predefined Recipe schema
 ├── demo2/   The same extraction running on a local model
-└── demo3/   Extraction with a custom schema
+├── demo3/   Extraction with a custom schema
+└── demo4/   Batch extraction over many files, orchestrated by a Claude Code skill
 ```
 
 ---
@@ -17,8 +18,7 @@ ontogpt/
 
 OntoGPT requires Python `>=3.10,<3.14`, so install **Python 3.13.x** if you don't already have it. Expand the instructions for your operating system:
 
-<details>
-<summary><b>macOS</b></summary>
+**macOS**
 
 ```bash
 # With Homebrew (https://brew.sh)
@@ -28,12 +28,11 @@ brew install python@3.13
 python3.13 --version
 ```
 
-Alternatively, download the official installer from <https://www.python.org/downloads/release/python-3137/>.
+Alternatively, download the official installer from [https://www.python.org/downloads/release/python-3137/](https://www.python.org/downloads/release/python-3137/).
 
-</details>
 
-<details>
-<summary><b>Windows</b></summary>
+
+**Windows**
 
 ```powershell
 # With winget (Windows Package Manager)
@@ -43,12 +42,11 @@ winget install Python.Python.3.13
 py -3.13 --version
 ```
 
-Alternatively, download the installer from <https://www.python.org/downloads/windows/> and tick **"Add python.exe to PATH"** during setup.
+Alternatively, download the installer from [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) and tick **"Add python.exe to PATH"** during setup.
 
-</details>
 
-<details>
-<summary><b>Linux (Ubuntu/Debian)</b></summary>
+
+**Linux (Ubuntu/Debian)**
 
 ```bash
 sudo add-apt-repository ppa:deadsnakes/ppa
@@ -61,7 +59,7 @@ python3.13 --version
 
 On other distributions use your package manager, or [pyenv](https://github.com/pyenv/pyenv) (`pyenv install 3.13.7`) to get a 3.13.x interpreter.
 
-</details>
+
 
 ### 1.2 Create a virtual environment and install OntoGPT
 
@@ -106,6 +104,7 @@ export OPENAI_API_KEY="sk-..."
 ```powershell
 $env:OPENAI_API_KEY = "sk-..."
 ```
+
 ---
 
 ## Demo 1 — Recipe extraction with a predefined schema
@@ -130,21 +129,23 @@ ontogpt --quiet=true extract \
 
 **Parameters**
 
-| Flag | Meaning |
-| ---- | ------- |
-| `-i` | Path to the input text file to extract from. |
+
+| Flag | Meaning                                                                                                                                |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `-i` | Path to the input text file to extract from.                                                                                           |
 | `-t` | The schema/template to extract against (required). `recipe` is the predefined template and `.Recipe` selects the root class within it. |
-| `-O` | Output serialization format. One of: `json`, `yaml`, `pickle`, `md`, `html`, `owl`, `turtle`, `jsonl`, `kgx`, `csv`, `tsv`. |
-| `-o` | Where to write the result. Without `-o`, output goes to stdout (the terminal). |
+| `-O` | Output serialization format. One of: `json`, `yaml`, `pickle`, `md`, `html`, `owl`, `turtle`, `jsonl`, `kgx`, `csv`, `tsv`.            |
+| `-o` | Where to write the result. Without `-o`, output goes to stdout (the terminal).                                                         |
+
 
 `--quiet=true` is a global option (it goes *before* the `extract` subcommand) that suppresses the warning/log messages OntoGPT prints to the terminal, keeping the output clean.
 
 The extracted recipe — grounded to ontology terms such as `FOODON:` (food ontology) and `UO:` (units of measurement) — is written to `spinach-feta-turkey-burgers.yaml`.
 
-<details>
-<summary><b>Enriching the output ontology (Optional)</b></summary>
+**Enriching the output ontology (Optional)**
 
-<br>
+  
+
 
 The enrichment step adds the labels, definitions, and `is_a` ancestors of the grounded terms to an OWL ontology. It needs an OWL export of the extraction, so first produce one:
 
@@ -196,7 +197,7 @@ robot merge \
 
 The first `runoak` call against a given ontology downloads its SQLite database (this can be large and slow on first run); subsequent runs use the cached copy.
 
-</details>
+
 
 ---
 
@@ -208,8 +209,7 @@ This demo runs the **same** extraction as Demo 1, but against a model served loc
 
 Expand the instructions for your operating system:
 
-<details>
-<summary><b>macOS</b></summary>
+**macOS**
 
 ```bash
 brew install ollama
@@ -222,23 +222,21 @@ Then start the server (the desktop app does this automatically):
 ollama serve
 ```
 
-</details>
 
-<details>
-<summary><b>Windows</b></summary>
 
-Download and run the installer from <https://ollama.com/download/windows>. Ollama runs as a background service after installation.
+**Windows**
 
-</details>
+Download and run the installer from [https://ollama.com/download/windows](https://ollama.com/download/windows). Ollama runs as a background service after installation.
 
-<details>
-<summary><b>Linux</b></summary>
+
+
+**Linux**
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-</details>
+
 
 ### 2.2 Pull the model
 
@@ -279,13 +277,15 @@ The input is the ingredient panel of a box of *Back to Nature Fudge Mint Cookies
 
 ### 3.1 The custom schema
 
-A schema is a [LinkML](https://linkml.io) YAML file that tells OntoGPT *what* to pull out of the text and *how* to ground it. Our schema, [`grocery-item.yaml`](./demo3/grocery-item.yaml), defines three classes:
+A schema is a [LinkML](https://linkml.io) YAML file that tells OntoGPT *what* to pull out of the text and *how* to ground it. Our schema, `[grocery-item.yaml](./demo3/grocery-item.yaml)`, defines three classes:
 
-| Class | Role |
-| ----- | ---- |
-| `GroceryItem` | The packaged product (the `tree_root`, i.e. the top-level thing being extracted). Carries a label, a description, the food it *contains*, and its ingredient statements. |
-| `FoodStuff` | Any food substance — the whole product, a compound ingredient, or a simple ingredient. Annotated with `annotators: sqlite:obo:foodon`, so each one is grounded against the [Food Ontology (FOODON)](https://foodon.org). |
-| `IngredientStatement` | A single "*parent* contains *ingredient*" fact. This is what lets the schema capture **multi-level nesting** — e.g. the cookie contains a fudge coating, and the fudge coating in turn contains cocoa and soy lecithin. |
+
+| Class                 | Role                                                                                                                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `GroceryItem`         | The packaged product (the `tree_root`, i.e. the top-level thing being extracted). Carries a label, a description, the food it *contains*, and its ingredient statements.                                                 |
+| `FoodStuff`           | Any food substance — the whole product, a compound ingredient, or a simple ingredient. Annotated with `annotators: sqlite:obo:foodon`, so each one is grounded against the [Food Ontology (FOODON)](https://foodon.org). |
+| `IngredientStatement` | A single "*parent* contains *ingredient*" fact. This is what lets the schema capture **multi-level nesting** — e.g. the cookie contains a fudge coating, and the fudge coating in turn contains cocoa and soy lecithin.  |
+
 
 The schema also embeds an `owl.template` (a Jinja snippet on `GroceryItem`) that emits the OWL axioms directly — `SubClassOf` and `ObjectSomeValuesFrom( gro:hasIngredient ... )` restrictions — so the extraction can be written straight out as an ontology.
 
@@ -306,14 +306,74 @@ ontogpt extract \
 
 **Parameters**
 
-| Flag | Meaning |
-| ---- | ------- |
-| `-i` | Path to the input text file — here the cookie's label and ingredient list. |
+
+| Flag | Meaning                                                                                                                                                                                                                                                                                 |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-i` | Path to the input text file — here the cookie's label and ingredient list.                                                                                                                                                                                                              |
 | `-t` | The schema/template. **This is the key difference from Demos 1 & 2:** instead of a packaged template name (`recipe.Recipe`), we pass a **path to our own LinkML schema file**. The root class (`GroceryItem`) is the one marked `tree_root: true`, so no `.ClassName` suffix is needed. |
-| `-m` | The model to use — the local `gemma4:26b` served by Ollama, the same one pulled in Demo 2. |
-| `-O` | Output format. We use `owl` because the goal is to build an ontology. |
-| `-o` | Where to write the result. |
+| `-m` | The model to use — the local `gemma4:26b` served by Ollama, the same one pulled in Demo 2.                                                                                                                                                                                              |
+| `-O` | Output format. We use `owl` because the goal is to build an ontology.                                                                                                                                                                                                                   |
+| `-o` | Where to write the result.                                                                                                                                                                                                                                                              |
+
 
 ### 3.3 The result
 
-The extraction is written to [`grocery-fudge-mint-cookies.owl`](./demo3/grocery-fudge-mint-cookies.owl). Open the file in [Protégé](https://protege.stanford.edu) to browse the resulting class hierarchy.
+The extraction is written to `[grocery-fudge-mint-cookies.owl](./demo3/grocery-fudge-mint-cookies.owl)`. Open the file in [Protégé](https://protege.stanford.edu) to browse the resulting class hierarchy.
+
+---
+
+## Demo 4 — Batch extraction over many files with a Claude Code skill
+
+Demo 3 turned **one** product label into an ontology. Demo 4 scales that to a collection of text documments and merges the results into a **single, de-duplicated, enriched ontology** — the `[demo4/](./demo4)` folder holds several cookie/biscuit products, all extracted against the same `[grocery-item.yaml](./demo4/grocery-item.yaml)` schema from Demo 3.
+
+Doing this by hand means running `ontogpt extract` once per file and then cleaning up the seams between files, because the same ingredient often comes out differently in each one. The work is packaged as a reusable **[Claude Code](https://docs.claude.com/en/docs/claude-code) skill** named `ontogpt-extract` that orchestrates three stages for you:
+
+> **Is this Claude-only?** Two different "models" are in play, and only one of them is Claude:
+>
+> - **The driver** is Claude Code — a *skill* is a Claude Code (and skills.sh-compatible) feature: an instruction file plus scripts that the agent reads and runs. So you orchestrate Demo 4 *with* Claude Code.
+> - **The extractor** is whatever LLM you point OntoGPT at. The skill simply passes your choice to `ontogpt extract -m <model>`. Demo 4 reuses the **local** `ollama/gemma4:26b` from Demo 2 — no API key, nothing leaves your machine — but `gpt-4o`, `claude-`*, or any other supported model works just as well.
+>
+> Nothing here is tied to a Claude *model*. The three scripts under `[demo4/skills/ontogpt-extract/scripts/](./demo4/skills/ontogpt-extract/scripts)` are plain Bash + Python and can be run by hand with no agent at all.
+
+### 4.1 Prerequisites
+
+In addition to the [Section 1](#1-prerequisites) setup (Python venv + OntoGPT, which also provides `runoak`):
+
+
+| Tool                                                       | Why                                      | Install (macOS)                            |
+| ---------------------------------------------------------- | ---------------------------------------- | ------------------------------------------ |
+| [Claude Code](https://docs.claude.com/en/docs/claude-code) | Runs the skill                           | `npm install -g @anthropic-ai/claude-code` |
+| [Node.js](https://nodejs.org) (`npx`)                      | Installs the skill via skills.sh         | `brew install node`                        |
+| GNU `parallel`                                             | Stage 1 fan-out                          | `brew install parallel`                    |
+| [ROBOT](http://robot.obolibrary.org/) + Java               | Stage 3 ontology merge                   | `brew install robot`                       |
+| Ollama + `gemma4:26b`                                      | The local extraction model (from Demo 2) | see [Section 2.1–2.2](#21-install-ollama)  |
+
+
+### 4.2 Install the skill with skills.sh
+
+The skill is bundled in this repo under `[demo4/skills/ontogpt-extract](./demo4/skills/ontogpt-extract)`. Install it with the [skills.sh](https://www.skills.sh) CLI (`npx skills`, no global install needed). Run from inside the `demo4/` folder:
+
+```bash
+cd demo4
+
+# Install from the bundled copy into this project's .claude/skills/
+npx skills add https://github.com/protegeteam/ai-for-ontology-engineering --skill ontogpt-extract
+
+# Pull the latest version of every installed skill later on
+npx skills update
+```
+
+### 4.3 Run it
+
+Launch Claude Code in the `demo4/` folder and give it the goal in plain language:
+
+```text
+Process all the text files and produce an ontology that represents the knowledge in the text
+```
+
+Claude recognises the task, invokes the `ontogpt-extract` skill, and asks **which model** to use (pick `gemma4:26b`). It then runs the processing steps. The outputs land under `demo4/ontogpt-out/`, including the the enriched final ontology `final.owl` that you can open in Protégé
+
+For the seven products, the extraction grounds ~36 distinct FOODON terms; reconciliation folds the spelling variants; and enrichment expands those terms to ~148 with their `is_a` ancestors, labels and definitions — yielding a `final.owl` whose seven products each link through `gro:containsFoodStuff` / `gro:hasIngredient` to their (possibly nested) ingredients.
+
+> **Note (macOS):** the bundled `enrich_ontology.sh` uses a `read` loop rather than the bash-4 `mapfile` builtin, so it works with the default `/bin/bash` 3.2 that ships on macOS. ROBOT also needs a Java runtime on your `PATH`.
+
