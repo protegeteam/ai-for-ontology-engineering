@@ -144,60 +144,18 @@ The extracted recipe — grounded to ontology terms such as `FOODON:` (food onto
 
 **Enriching the output ontology (Optional)**
 
-  
+On its own, the extraction only records the grounded term *IDs* (e.g. `FOODON:00001287`) — not their labels, definitions, or place in the class hierarchy. The simplest way to pull all of that in is to let the ontology **import** the reference ontologies it grounds against, so a tool like [Protégé](https://protege.stanford.edu) can resolve every term online.
 
+Open `spinach-feta-turkey-burgers.owl` in [Protégé](https://protege.stanford.edu) and add an import for each reference ontology through the GUI:
 
-The enrichment step adds the labels, definitions, and `is_a` ancestors of the grounded terms to an OWL ontology. It needs an OWL export of the extraction, so first produce one:
+1. Go to the **Active ontology** tab.
+2. In the **Ontology imports** tab, find **Direct Imports** and click the **+** (add) button.
+3. In the import wizard, choose **Import an ontology contained in a document located on the web** and enter the ontology URL:
+   - `http://purl.obolibrary.org/obo/foodon.owl`
+   - `http://purl.obolibrary.org/obo/ro.owl`
+4. Click **Continue → Finish**, then repeat for the second URL.
 
-```bash
-ontogpt --quiet=true extract \
-  -i allrecipes-spinach-feta-turkey-burgers.txt \
-  -t recipe.Recipe \
-  -O owl \
-  -o spinach-feta-turkey-burgers.owl
-```
-
-> **Requires:** `runoak` (installed with OntoGPT) and [ROBOT](http://robot.obolibrary.org/) with a Java runtime. On macOS: `brew install robot`.
-
-```bash
-mkdir -p tmp
-
-# 1. Collect the grounded ontology IDs, converting the full OBO IRIs to CURIEs.
-grep -oE "(FOODON|UO|BFO|RO)_[0-9]+" \
-  spinach-feta-turkey-burgers.owl | sort -u | sed 's/_/:/' \
-  > tmp/grounded-ids.txt
-
-# 2. Split by source ontology.
-grep -E "^FOODON:"   tmp/grounded-ids.txt > tmp/foodon-ids.txt
-grep -E "^UO:"       tmp/grounded-ids.txt > tmp/uo-ids.txt
-grep -E "^(BFO|RO):" tmp/grounded-ids.txt > tmp/ro-ids.txt
-
-# 3. For each ontology: expand seeds to their is-a ancestors, then extract a
-# subset as OBO (carries labels + definitions + is_a parents in one shot).
-for prefix in foodon uo ro; do
-  runoak -i sqlite:obo:$prefix ancestors -p i .idfile \
-    tmp/${prefix}-ids.txt --output-type csv 2>/dev/null \
-    | awk -F'\t' 'NR>1 && $1 ~ /:/{print $1}' | sort -u \
-    > tmp/${prefix}-anc.txt
-  cat tmp/${prefix}-ids.txt >> tmp/${prefix}-anc.txt
-  sort -u -o tmp/${prefix}-anc.txt tmp/${prefix}-anc.txt
-  runoak -i sqlite:obo:$prefix extract .idfile \
-    tmp/${prefix}-anc.txt --dangling -p i \
-    -O obo -o tmp/${prefix}-enriched.obo
-done
-
-# 4. Ontology merge using ROBOT tool.
-robot merge \
-  --input spinach-feta-turkey-burgers.owl \
-  --input tmp/foodon-enriched.obo \
-  --input tmp/uo-enriched.obo \
-  --input tmp/ro-enriched.obo \
-  --output spinach-feta-turkey-burgers.enriched.owl
-```
-
-The first `runoak` call against a given ontology downloads its SQLite database (this can be large and slow on first run); subsequent runs use the cached copy.
-
-
+Together these cover every grounded term in the extraction: `foodon.owl` resolves the `FOODON:`, `UO:`, and `BFO:` terms (FOODON already imports those), and `ro.owl` resolves the `RO:` relations. Protégé fetches the imported ontologies and resolves every grounded term to its label, definition, and `is_a` ancestors.
 
 ---
 

@@ -1,514 +1,574 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:swrl="http://www.w3.org/2003/11/swrl#">
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+     xml:base="http://www.w3.org/2000/01/rdf-schema"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/foodon/releases/2025-12-30/foodon.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/unit -->
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/unit"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/amount -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/ontogpt/recipe/amount"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/food_item -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/ontogpt/recipe/food_item"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/steps -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/ontogpt/recipe/steps"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/state -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ontogpt/recipe/state"/>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/value -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ontogpt/recipe/value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/auto/Insert -->
+
+    <owl:Class rdf:about="http://example.org/auto/Insert">
+        <label>Insert</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/Mix -->
+
+    <owl:Class rdf:about="http://example.org/auto/Mix">
+        <label>Mix</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/None -->
+
+    <owl:Class rdf:about="http://example.org/auto/None">
+        <label>None</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/cloves -->
+
+    <owl:Class rdf:about="http://example.org/auto/cloves">
+        <label>cloves</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/feta -->
+
+    <owl:Class rdf:about="http://example.org/auto/feta">
+        <label>feta</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/form -->
+
+    <owl:Class rdf:about="http://example.org/auto/form">
+        <label>form</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/grate -->
+
+    <owl:Class rdf:about="http://example.org/auto/grate">
+        <label>grate</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/grill -->
+
+    <owl:Class rdf:about="http://example.org/auto/grill">
+        <label>grill</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/large -->
+
+    <owl:Class rdf:about="http://example.org/auto/large">
+        <label>large</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/mixture -->
+
+    <owl:Class rdf:about="http://example.org/auto/mixture">
+        <label>mixture</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/preheat -->
+
+    <owl:Class rdf:about="http://example.org/auto/preheat">
+        <label>preheat</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/temperature -->
+
+    <owl:Class rdf:about="http://example.org/auto/temperature">
+        <label>temperature</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/thermometer -->
+
+    <owl:Class rdf:about="http://example.org/auto/thermometer">
+        <label>thermometer</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/- -->
+
+    <owl:Class rdf:about="http://example.org/auto/-">
+        <label>-</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/cooking%20spray -->
+
+    <owl:Class rdf:about="http://example.org/auto/cooking%20spray">
+        <label>cooking spray</label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/auto/large%20bowl -->
+
+    <owl:Class rdf:about="http://example.org/auto/large%20bowl">
+        <label>large bowl</label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002951 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002951">
+        <label>patties</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002968 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002968">
+        <label>spinach</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003582 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00003582">
+        <label>garlic</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_02020418 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_02020418">
+        <label>turkey</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03307280 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03307280">
+        <label>feta cheese</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03310387 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03310387">
+        <label>oil</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03316061 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03316061">
+        <label>eggs</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0010033 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010033">
+        <label>ounce</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0010034 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010034">
+        <label>pounds</label>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/ontogpt/recipe/Recipe -->
+
+    <owl:Class rdf:about="http://w3id.org/ontogpt/recipe/Recipe"/>
+    
+
+
+    <!-- https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers -->
+
     <owl:Class rdf:about="https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers">
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="frozen, chopped">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction owl:hasValue="10">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="whole">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction owl:hasValue="2">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/cloves"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="ground">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction owl:hasValue="2">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010034"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307280"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="none">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction owl:hasValue="4">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="N/A">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction owl:hasValue="2">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/large"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/cooking%20spray"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction owl:hasValue="none">
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://example.org/auto/Insert"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/thermometer"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="instant-read">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="N/A (state not specified)">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/temperature"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="reading">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                <owl:someValuesFrom rdf:resource="http://example.org/auto/None"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://example.org/auto/Mix"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="whole">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="N/A">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/feta"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="N/A">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="N/A">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="whole">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/mixture"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="combined">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                <owl:someValuesFrom rdf:resource="http://example.org/auto/large%20bowl"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://example.org/auto/form"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="8">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                <owl:someValuesFrom rdf:resource="http://example.org/auto/-"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
-        <subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#">
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://example.org/auto/preheat"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310387"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="N/A">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="preheated">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                <owl:someValuesFrom rdf:resource="http://example.org/auto/grate"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </subClassOf>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/ontogpt/recipe/Recipe"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/cloves"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <owl:hasValue>2</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>whole</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/large"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <owl:hasValue>2</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>N/A</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <owl:hasValue>10</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>frozen, chopped</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <owl:hasValue>4</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307280"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>none</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010034"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                        <owl:hasValue>2</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>ground</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/cooking%20spray"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>none</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://example.org/auto/preheat"/>
+                                    <rdf:Description rdf:about="http://example.org/auto/Insert"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
                                         <owl:someValuesFrom>
@@ -516,10 +576,28 @@
                                                 <owl:intersectionOf rdf:parseType="Collection">
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310387"/>
+                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/thermometer"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="N/A">
+                                                    <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>instant-read</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>N/A (state not specified)</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -532,10 +610,11 @@
                                                 <owl:intersectionOf rdf:parseType="Collection">
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
+                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/temperature"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="preheated">
+                                                    <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>reading</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -543,11 +622,7 @@
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/grate"/>
+                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/None"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -566,10 +641,11 @@
                                                 <owl:intersectionOf rdf:parseType="Collection">
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/feta"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="whole">
+                                                    <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>N/A</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -584,40 +660,9 @@
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="N/A">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
                                                     <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/feta"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="N/A">
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="N/A">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>N/A</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -632,8 +677,43 @@
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="whole">
+                                                    <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>whole</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>whole</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>N/A</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -648,8 +728,9 @@
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                                         <owl:someValuesFrom rdf:resource="http://example.org/auto/mixture"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="combined">
+                                                    <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>combined</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -678,8 +759,9 @@
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="8">
+                                                    <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>8</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -698,7 +780,7 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://example.org/auto/Insert"/>
+                                    <rdf:Description rdf:about="http://example.org/auto/preheat"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
                                         <owl:someValuesFrom>
@@ -706,26 +788,11 @@
                                                 <owl:intersectionOf rdf:parseType="Collection">
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/thermometer"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310387"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="instant-read">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
                                                     <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="N/A (state not specified)">
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>N/A</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -738,10 +805,11 @@
                                                 <owl:intersectionOf rdf:parseType="Collection">
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/temperature"/>
+                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
                                                     </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="reading">
+                                                    <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                        <owl:hasValue>preheated</owl:hasValue>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -749,233 +817,11 @@
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/None"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/cooking%20spray"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction owl:hasValue="none">
-                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="ground">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/grate"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction owl:hasValue="2">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010034"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="frozen, chopped">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction owl:hasValue="10">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307280"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="none">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction owl:hasValue="4">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="N/A">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction owl:hasValue="2">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/large"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction owl:hasValue="whole">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction owl:hasValue="2">
-                                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
-                                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/cloves"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -984,94 +830,556 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <description xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These spinach and feta turkey burgers are a big hit in the summertime when everyone is tired of the same old hamburgers and hot dogs. Serve with or without buns and your favorite condiments. I like to serve these with lettuce, tomato, and tzatziki sauce.</description>
-        <subject xmlns="http://purl.org/dc/terms/" rdf:resource="http://example.org/auto/Main%20Course"/>
-        <subject xmlns="http://purl.org/dc/terms/" rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002737"/>
-        <subject xmlns="http://purl.org/dc/terms/" rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450006"/>
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spinach and Feta Turkey Burgers</label>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/cloves"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <owl:hasValue>2</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>whole</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/large"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <owl:hasValue>2</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>N/A</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <owl:hasValue>10</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>frozen, chopped</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010033"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <owl:hasValue>4</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307280"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>none</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/amount"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0010034"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/value"/>
+                                                <owl:hasValue>2</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>ground</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002420"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/food_item"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://example.org/auto/cooking%20spray"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                        <owl:hasValue>none</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/Insert"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/thermometer"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>instant-read</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>N/A (state not specified)</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/temperature"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>reading</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <owl:someValuesFrom rdf:resource="http://example.org/auto/None"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/Mix"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/feta"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>N/A</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002968"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>N/A</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003582"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>whole</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_02020418"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>whole</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>N/A</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/mixture"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>combined</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <owl:someValuesFrom rdf:resource="http://example.org/auto/large%20bowl"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/form"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002951"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>8</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <owl:someValuesFrom rdf:resource="http://example.org/auto/-"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/steps"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://example.org/auto/preheat"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310387"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>N/A</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://w3id.org/ontogpt/recipe/state"/>
+                                                <owl:hasValue>preheated</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <owl:someValuesFrom rdf:resource="http://example.org/auto/grate"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+                                <owl:someValuesFrom rdf:resource="http://example.org/auto/grill"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </subClassOf>
+        <terms:description>These spinach and feta turkey burgers are a big hit in the summertime when everyone is tired of the same old hamburgers and hot dogs. Serve with or without buns and your favorite condiments. I like to serve these with lettuce, tomato, and tzatziki sauce.</terms:description>
+        <terms:subject rdf:resource="http://example.org/auto/Main%20Course"/>
+        <terms:subject rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002737"/>
+        <terms:subject rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450006"/>
+        <label>Spinach and Feta Turkey Burgers</label>
     </owl:Class>
-    <rdf:Description rdf:about="http://example.org/auto/-">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/Insert">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insert</label>
-    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     <rdf:Description rdf:about="http://example.org/auto/Main%20Course">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main Course</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/Mix">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mix</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/None">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/cloves">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloves</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/cooking%20spray">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooking spray</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/feta">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feta</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/form">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">form</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/grate">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grate</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/grill">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grill</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/large">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">large</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/large%20bowl">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">large bowl</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/mixture">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixture</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/preheat">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preheat</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/temperature">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://example.org/auto/thermometer">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermometer</label>
+        <label>Main Course</label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002737">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burgers</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002951">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patties</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002968">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spinach</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00003582">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garlic</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_02020418">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turkey</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03307280">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feta cheese</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03310387">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oil</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03316061">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eggs</label>
+        <label>Burgers</label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03450006">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grilling</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010033">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ounce</label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010034">
-        <label xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pounds</label>
+        <label>Grilling</label>
     </rdf:Description>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
