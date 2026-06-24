@@ -123,8 +123,8 @@ cd demo1
 ontogpt --quiet=true extract \
   -i allrecipes-spinach-feta-turkey-burgers.txt \
   -t recipe.Recipe \
-  -O yaml \
-  -o spinach-feta-turkey-burgers.yaml
+  -O owl \
+  -o spinach-feta-turkey-burgers.owl
 ```
 
 **Parameters**
@@ -140,7 +140,7 @@ ontogpt --quiet=true extract \
 
 `--quiet=true` is a global option (it goes *before* the `extract` subcommand) that suppresses the warning/log messages OntoGPT prints to the terminal, keeping the output clean.
 
-The extracted recipe — grounded to ontology terms such as `FOODON:` (food ontology) and `UO:` (units of measurement) — is written to `spinach-feta-turkey-burgers.yaml`.
+The extracted recipe — grounded to ontology terms such as `FOODON:` (food ontology) and `UO:` (units of measurement) — is written to `spinach-feta-turkey-burgers.owl`.
 
 **Enriching the output ontology (Optional)**
 
@@ -221,8 +221,8 @@ ontogpt --quiet=true extract \
   -i allrecipes-spinach-feta-turkey-burgers.txt \
   -t recipe.Recipe \
   -m ollama/gemma4:26b \
-  -O yaml \
-  -o spinach-feta-turkey-burgers.yaml
+  -O owl \
+  -o spinach-feta-turkey-burgers.owl
 ```
 
 ---
