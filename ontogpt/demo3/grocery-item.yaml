@@ -49,9 +49,34 @@ classes:
         slot_uri: rdfs:comment
         annotations:
           owl: AnnotationProperty, AnnotationAssertion
-    slots:
-      - contains_food_stuff
-      - has_ingredients
+      contains_food_stuff:
+        description: >-
+          The specific food that this grocery item is, as a single food stuff in
+          singular form. Use the most specific food name stated for the product
+          (e.g. "Fudge Mint Cookie"), not a broad category ("cookie", "cookies") and
+          not the brand. Write the name in Title Case and use it consistently.
+        range: FoodStuff
+        multivalued: true
+        slot_uri: gro:containsFoodStuff
+        annotations:
+          owl: ObjectProperty
+      has_ingredients:
+        description: >-
+          A semicolon-separated list of containment statements, one per ingredient
+          mention, each written as "PARENT contains INGREDIENT". The parent is the
+          food the ingredient belongs to: the overall food stuff for top-level
+          ingredients, or a compound ingredient for its sub-ingredients. State the
+          product as containing each top-level ingredient, and each compound
+          ingredient as containing its sub-ingredients. For example, for a frozen
+          pizza topped with cheese and a sauce that is itself made from tomato and
+          herbs: "Pizza contains Sauce; Pizza contains Cheese; Sauce contains Tomato;
+          Sauce contains Herbs". Write each food's name identically every time it
+          appears — same spelling and Title Case capitalization — so the same food is
+          never split into duplicate classes.
+        range: IngredientStatement
+        multivalued: true
+        annotations:
+          owl: ObjectProperty
     annotations:
       owl: Class
       owl.template: |-
@@ -95,33 +120,3 @@ classes:
           the food stuff that contains this ingredient — either the overall
           product food or a compound ingredient that itself contains ingredients
         range: FoodStuff
-
-slots:
-  contains_food_stuff:
-    description: >-
-      the specific food that this grocery item is, as a single food stuff in
-      singular form. Use the most specific food name stated for the product
-      (e.g. "Fudge Mint Cookie"), not a broad category ("cookie", "cookies") and
-      not the brand. Write the name in Title Case and use it consistently.
-    range: FoodStuff
-    multivalued: true
-    slot_uri: gro:containsFoodStuff
-    annotations:
-      owl: ObjectProperty
-  has_ingredients:
-    description: >-
-      semicolon-separated list of containment statements, one per ingredient
-      mention, each written as "PARENT contains INGREDIENT". The parent is the
-      food the ingredient belongs to: the overall product for top-level
-      ingredients, or a compound ingredient for its sub-ingredients. State the
-      product as containing each top-level ingredient, and each compound
-      ingredient as containing its sub-ingredients. For example, for a frozen
-      pizza topped with cheese and a sauce that is itself made from tomato and
-      herbs: "Pizza contains Sauce; Pizza contains Cheese; Sauce contains Tomato;
-      Sauce contains Herbs". Write each food's name identically every time it
-      appears — same spelling and Title Case capitalization — so the same food is
-      never split into duplicate classes.
-    range: IngredientStatement
-    multivalued: true
-    annotations:
-      owl: ObjectProperty
