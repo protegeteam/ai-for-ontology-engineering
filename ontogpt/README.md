@@ -142,6 +142,25 @@ ontogpt --quiet=true extract \
 
 The extracted recipe — grounded to ontology terms such as `FOODON:` (food ontology) and `UO:` (units of measurement) — is written to `spinach-feta-turkey-burgers.owl`.
 
+### Other predefined schemas
+
+`recipe` is just one of the many schemas that ship with OntoGPT. You run any of them the same way — swap the `-t` value for one of the names below and point `-i` at a relevant text. The full list lives in the [templates folder](https://github.com/monarch-initiative/ontogpt/tree/main/src/ontogpt/templates); here are ten examples:
+
+| `-t` value | What it extracts |
+| --- | --- |
+| [`recipe.Recipe`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/recipe.yaml) | Food recipes — ingredients and preparation steps (used above). |
+| [`drug.DrugMechanismSet`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/drug.yaml) | Drug mechanisms of action and the diseases they treat. |
+| [`mendelian_disease.MendelianDisease`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/mendelian_disease.yaml) | Mendelian (genetic) diseases — genes, symptoms, and inheritance. |
+| [`gocam.GoCamAnnotations`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/gocam.yaml) | Gene Ontology Causal Activity Models — molecular activities and pathways. |
+| [`phenotype.Trait`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/phenotype.yaml) | Computational phenotypes described as entity–quality traits. |
+| [`biotic_interaction.Container`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/biotic_interaction.yaml) | Ecological interactions between species (predator/prey, host/parasite). |
+| [`environmental_metadata.Dataset`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/environmental_metadata.yaml) | Metadata describing environmental datasets and samples. |
+| [`reaction.Reaction`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/reaction.yaml) | Biochemical reactions — their participants and the pathways they belong to. |
+| [`maxo.MaxoAnnotations`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/maxo.yaml) | Medical actions — treatments and procedures used to manage a disease. |
+| [`personinfo.Container`](https://github.com/monarch-initiative/ontogpt/blob/main/src/ontogpt/templates/personinfo.yaml) | A general, non-biomedical example — people, their occupations, and relationships. |
+
+The `-t` value is always `<schema>.<RootClass>`, where `<schema>` is the predefined template (without `.yaml`) and `<RootClass>` is its top-level class.
+
 **Enriching the output ontology (Optional)**
 
 On its own, the extraction only records the grounded term *IDs* (e.g. `FOODON:00001287`) — not their labels, definitions, or place in the class hierarchy. The simplest way to pull all of that in is to let the ontology **import** the reference ontologies it grounds against, so a tool like [Protégé](https://protege.stanford.edu) can resolve every term online.
