@@ -254,7 +254,7 @@ The input is the ingredient panel of a box of *Back to Nature Fudge Mint Cookies
 
 ### 3.1 The custom schema
 
-A schema is a [LinkML](https://linkml.io) YAML file that tells OntoGPT *what* to pull out of the text and *how* to ground it. Our schema, `[grocery-item.yaml](./demo3/grocery-item.yaml)`, defines three classes:
+A schema is a [LinkML](https://linkml.io) YAML file that tells OntoGPT *what* to pull out of the text and *how* to ground it. Our schema, [grocery-item.yaml](./demo3/grocery-item.yaml), defines three classes:
 
 
 | Class                 | Role                                                                                                                                                                                                                     |
@@ -295,22 +295,15 @@ ontogpt extract \
 
 ### 3.3 The result
 
-The extraction is written to `[grocery-fudge-mint-cookies.owl](./demo3/grocery-fudge-mint-cookies.owl)`. Open the file in [Protégé](https://protege.stanford.edu) to browse the resulting class hierarchy.
+Open the output file `grocery-fudge-mint-cookies.owl` in [Protégé](https://protege.stanford.edu) to browse the resulting class hierarchy.
 
 ---
 
 ## Demo 4 — Batch extraction over many files with a Claude Code skill
 
-Demo 3 turned **one** product label into an ontology. Demo 4 scales that to a collection of text documments and merges the results into a **single, de-duplicated, enriched ontology** — the `[demo4/](./demo4)` folder holds several cookie/biscuit products, all extracted against the same `[grocery-item.yaml](./demo4/grocery-item.yaml)` schema from Demo 3.
+Demo 3 turned **one** product label into an ontology. Demo 4 scales that to a collection of text documments and merges the results into a **single, de-duplicated, enriched ontology** — the [demo4/](./demo4) folder holds several cookie/biscuit products, all extracted against the same [grocery-item.yaml](./demo4/grocery-item.yaml) schema from Demo 3.
 
 Doing this by hand means running `ontogpt extract` once per file and then cleaning up the seams between files, because the same ingredient often comes out differently in each one. The work is packaged as a reusable **[Claude Code](https://docs.claude.com/en/docs/claude-code) skill** named `ontogpt-extract` that orchestrates three stages for you:
-
-> **Is this Claude-only?** Two different "models" are in play, and only one of them is Claude:
->
-> - **The driver** is Claude Code — a *skill* is a Claude Code (and skills.sh-compatible) feature: an instruction file plus scripts that the agent reads and runs. So you orchestrate Demo 4 *with* Claude Code.
-> - **The extractor** is whatever LLM you point OntoGPT at. The skill simply passes your choice to `ontogpt extract -m <model>`. Demo 4 reuses the **local** `ollama/gemma4:26b` from Demo 2 — no API key, nothing leaves your machine — but `gpt-4o`, `claude-`*, or any other supported model works just as well.
->
-> Nothing here is tied to a Claude *model*. The three scripts under `[demo4/skills/ontogpt-extract/scripts/](./demo4/skills/ontogpt-extract/scripts)` are plain Bash + Python and can be run by hand with no agent at all.
 
 ### 4.1 Prerequisites
 
@@ -328,7 +321,7 @@ In addition to the [Section 1](#1-prerequisites) setup (Python venv + OntoGPT, w
 
 ### 4.2 Install the skill with skills.sh
 
-The skill is bundled in this repo under `[demo4/skills/ontogpt-extract](./demo4/skills/ontogpt-extract)`. Install it with the [skills.sh](https://www.skills.sh) CLI (`npx skills`, no global install needed). Run from inside the `demo4/` folder:
+The skill is bundled in this repo under [demo4/skills/ontogpt-extract](./demo4/skills/ontogpt-extract). Install it with the [skills.sh](https://www.skills.sh) CLI (`npx skills`, no global install needed). Run from inside the `demo4/` folder:
 
 ```bash
 cd demo4
