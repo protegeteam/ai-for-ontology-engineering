@@ -9,6 +9,8 @@ Two setups are documented below:
 1. **[Claude Cowork](#1-claude-cowork)** — a hosted assistant; register owl-mcp in the developer config.
 2. **[A local model with LM Studio](#2-local-model-with-lm-studio)** — fully offline using the `Gemma4-26B-A4B-QAT` model.
 
+You can also add **[robot-mcp](#3-optional-robot-operations-with-robot-mcp)** alongside owl-mcp to run higher-level [ROBOT](http://robot.obolibrary.org/) operations (reasoning, validation, conversion, …).
+
 > Throughout this guide, replace that path with the location of `grocery.owl` on your own machine.
 
 ---
@@ -131,6 +133,31 @@ Local models like Gemma are less able to infer the working file than Cowork, so 
 > Using the owl-mcp tools on the file `/absolute/path/to/grocery.owl`: add `rdfs:label` "Cocoa Butter" to `CocoaButter`, and add an `rdfs:comment` description.
 
 If the model returns an answer without calling a tool, remind it explicitly: *"Call the owl-mcp tools to perform the actions."*
+
+---
+
+## 3. Optional: ROBOT operations with robot-mcp
+
+`owl-mcp` works at the level of individual axioms. For higher-level ontology operations — reasoning, validation, quality reports, format conversion, module extraction, SPARQL queries, templating, and diffs — you can add the **[robot-tool-mcp](https://github.com/musen-lab/robot-tool-mcp)** server. It wraps the [ROBOT](http://robot.obolibrary.org/) command-line tool and exposes its commands (`robot_reason`, `robot_report`, `robot_convert`, `robot_extract`, `robot_query`, `robot_template`, `robot_diff`, …) as MCP tools.
+
+**Prerequisites:** [ROBOT](http://robot.obolibrary.org/) installed and on your `PATH` (it requires Java — verify with `robot --version`), plus `uv`/`uvx`.
+
+Add a `robot-mcp` entry alongside your existing `owl-mcp` entry in the same `mcpServers` block (Cowork's **Edit Config** or LM Studio's `mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "robot-mcp": {
+      "command": "uvx",
+      "args": ["robot-tool-mcp"]
+    }
+  }
+}
+```
+
+Then enable/select `robot-mcp` the same way you did for owl-mcp. See the **[robot-tool-mcp README](https://github.com/musen-lab/robot-tool-mcp)** for the full tool list and detailed setup instructions.
+
+For example, after editing `grocery.owl` you can ask the assistant to *"run the ROBOT reasoner on grocery.owl and list any unsatisfiable classes"* or *"generate a ROBOT report for grocery.owl"*.
 
 ---
 
