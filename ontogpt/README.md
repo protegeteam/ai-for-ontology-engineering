@@ -303,7 +303,12 @@ Open the output file `grocery-fudge-mint-cookies.owl` in [Protégé](https://pro
 
 Demo 3 turned **one** product label into an ontology. Demo 4 scales that to a collection of text documments and merges the results into a **single, de-duplicated, enriched ontology** — the [demo4/](./demo4) folder holds several cookie/biscuit products, all extracted against the same [grocery-item.yaml](./demo4/grocery-item.yaml) schema from Demo 3.
 
-Doing this by hand means running `ontogpt extract` once per file and then cleaning up the seams between files, because the same ingredient often comes out differently in each one. The work is packaged as a reusable **[Claude Code](https://docs.claude.com/en/docs/claude-code) skill** named `ontogpt-extract` that orchestrates three stages for you:
+Doing this by hand means running `ontogpt extract` once per file will be time consuming. To tackle this issue, we introduce a reusable **[Claude Code](https://docs.claude.com/en/docs/claude-code) skill** named `ontogpt-extract` to perform a batch extraction over many files.
+
+> **How many models involved in this workflow?**:
+>
+> - **The orchestrator** is Claude — a *skill* is a Claude Code feature: an instruction file plus scripts that the agent reads and runs. So you orchestrate Demo 4 *with* Claude Code.
+> - **The extractor** is whatever LLM you point OntoGPT at. The skill simply passes your choice to `ontogpt extract -m <model>`. Demo 4 reuses the **local** `ollama/gemma4:26b` from Demo 2 — no API key, nothing leaves your machine — but `gpt-4o`, `claude-`*, or any other supported model works just as well.
 
 ### 4.1 Prerequisites
 
