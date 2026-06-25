@@ -22,6 +22,13 @@ The guide covers two setups: a hosted assistant (Claude Cowork) and a fully loca
 
 Pick the tool you want to try and follow the README in its folder — each one lists its own prerequisites and walks through the examples.
 
+## Credits
+
+All credit for the tools featured here goes to their authors. This repository only provides examples and course materials built around them.
+
+- **OntoGPT** is developed by the [Monarch Initiative](https://monarchinitiative.org), with the underlying SPIRES method created by J. Harry Caufield, Chris Mungall, Harshad Hegde, and colleagues. See the [OntoGPT repository](https://github.com/monarch-initiative/ontogpt) and the [SPIRES paper](https://doi.org/10.1093/bioinformatics/btae104).
+- **owl-mcp** is developed by Chris Mungall and the [ai4curation](https://github.com/ai4curation) community. See the [owl-mcp repository](https://github.com/ai4curation/owl-mcp).
+
 ## License
 
 See [LICENSE](./LICENSE).
